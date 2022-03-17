@@ -1,0 +1,2 @@
+build --host_platform=@io_bazel_rules_dotnet//dotnet/toolchain:linux_amd64_6.0.101 
+build --platforms=@io_bazel_rules_dotnet//dotnet/toolchain:linux_amd64_6.0.101
