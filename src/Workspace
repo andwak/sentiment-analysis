@@ -1,5 +1,5 @@
-# A newer version should be fine
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
 git_repository(
     name = "io_bazel_rules_dotnet",
     remote = "https://github.com/bazelbuild/rules_dotnet",
@@ -7,13 +7,30 @@ git_repository(
 )
 
 load("@io_bazel_rules_dotnet//dotnet:deps.bzl", "dotnet_repositories")
+
 dotnet_repositories()
 
 load(
     "@io_bazel_rules_dotnet//dotnet:defs.bzl",
     "dotnet_register_toolchains",
     "dotnet_repositories_nugets",
+    "dotnet_nuget_new",
 )
 
 dotnet_register_toolchains()
+
 dotnet_repositories_nugets()
+
+dotnet_nuget_new(
+    name = "MicrosoftML", 
+    package="Microsoft.ML", 
+    version="1.7.1", 
+    build_file="//ThirdParty/MicrosoftML:Microsoft.Ml.bzl"
+)
+
+dotnet_nuget_new(
+   name = "JsonNet",
+   package = "newtonsoft.json",
+   version = "13.0.1",
+   build_file = "//ThirdParty/Newtonsoft:Json.net.bzl"
+)
