@@ -3,3 +3,7 @@ src/bazel-bin
 src/bazel-out
 src/bazel-src
 src/bazel-testlogs
+bazel-bin
+bazel-out
+bazel-sentiment-analysis
+bazel-testlogs
