@@ -36,6 +36,6 @@ The host platform and toolchain needs to be defined correctly for .Net toolchain
 
 # Running the Application
 
-## Running the CSharp Application
+## Running the C# Application
 
 `bazel run //...`
