@@ -8,6 +8,7 @@ csharp_binary(
     deps = [
         "@core_sdk_stdlib//:libraryset",
         "@MicrosoftML//:MicrosoftMLAssemblies",
+        "@MicrosoftMLDataView//:MicrosoftMLDataViewAssembly",
         "@JsonNet//:JsonAssemblies",
     ],
 )

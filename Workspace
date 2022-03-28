@@ -29,6 +29,13 @@ dotnet_nuget_new(
 )
 
 dotnet_nuget_new(
+    name = "MicrosoftMLDataView", 
+    package="Microsoft.ML.DataView", 
+    version="1.7.1", 
+    build_file="//ThirdParty/MicrosoftML:Microsoft.Ml.DataView.bzl"
+)
+
+dotnet_nuget_new(
    name = "JsonNet",
    package = "newtonsoft.json",
    version = "13.0.1",

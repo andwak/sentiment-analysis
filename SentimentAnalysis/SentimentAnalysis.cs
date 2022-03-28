@@ -1,5 +1,5 @@
 using System;
-//using Microsoft.ML;
+using Microsoft.ML;
 using Newtonsoft.Json;
 
 namespace HelloWorld
@@ -8,6 +8,7 @@ namespace HelloWorld
   {
     static void Main(string[] args)
     {
+        MLContext context = new MLContext();
         Console.WriteLine("First Version of Sentiment Analysis.");
     }
   }
