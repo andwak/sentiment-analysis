@@ -9,6 +9,7 @@ This repository has been created as a playground for ML.Net and Sentiment Analys
 This development environment contains a Dev Container compatible with Visual Studio Code. This is currently the preferred method for running the development environment.
 
 To use the Dev Container follow these steps:
+
 - Ensure that the "Remote Containers" extension for Visual Studio Code is installed
 - Open this folder in Visual Studio Code
 - Select the option open in container

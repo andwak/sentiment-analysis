@@ -15,7 +15,8 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-dotnettools.csharp",
-		"BazelBuild.vscode-bazel"
+		"BazelBuild.vscode-bazel",
+		"DavidAnson.vscode-markdownlint"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
