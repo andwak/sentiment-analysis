@@ -40,3 +40,24 @@ The host platform and toolchain needs to be defined correctly for .Net toolchain
 ## Running the C# Application
 
 `bazel run //...`
+
+# Using Bazel for .Net Applications
+
+## Advantages
+
+The following advantages of using Bazel for a .Net project have been identified
+
+- The power of Bazel will work well with a mono repository
+- Multiple programming languages could be supported, C#, C, C++, Python, etc.
+- Backend and frontend can be developed in the same repository with the same build.
+- Build caching, incremental builds works out of the box
+- Good integration with Nuget
+
+## Disadvantages
+
+The following disadvantages of using Bazel for a .Net project have been identified
+
+- Examples are hard to find or not easy to follow
+- Documentation is limited at the time of writing
+- Typos and errors in the build are not easy to find (may get easier with more experience)
+- Implementing the build is more time consuming than using integrated Visual Studio tooling
