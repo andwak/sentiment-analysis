@@ -36,8 +36,8 @@ dotnet_nuget_new(
 )
 
 dotnet_nuget_new(
-   name = "JsonNet",
-   package = "newtonsoft.json",
-   version = "13.0.1",
-   build_file = "//ThirdParty/Newtonsoft:Json.net.bzl"
+    name = "CommandLineParser", 
+    package="CommandLineParser", 
+    version="2.8.0", 
+    build_file="//ThirdParty/CommandLineParser:CommandLineParser.bzl"
 )

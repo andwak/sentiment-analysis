@@ -39,7 +39,15 @@ The host platform and toolchain needs to be defined correctly for .Net toolchain
 
 ## Running the C# Application
 
-`bazel run //...`
+Runs the specific target, in this case the entry point to the application, a command line console.
+
+To train the model execute
+
+`//SentimentAnalysis:Program.exe train`
+
+To predict based on the input
+
+`//SentimentAnalysis:Program.exe predict`
 
 # Using Bazel for .Net Applications
 

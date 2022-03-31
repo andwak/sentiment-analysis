@@ -1,15 +1,16 @@
 using System;
-using Microsoft.ML;
-using Newtonsoft.Json;
+using CommandLine;
+using SentimentAnalysis.CommandLineParser;
 
-namespace HelloWorld
+namespace SentimentAnalysis
 {
   class Program
   {
     static void Main(string[] args)
     {
-        MLContext context = new MLContext();
-        Console.WriteLine("First Version of Sentiment Analysis.");
+      Parser.Default.ParseArguments<TrainCommand, PredictCommand>(args)
+          .WithParsed<ICommand>(t => t.Execute());
+
     }
   }
 }
