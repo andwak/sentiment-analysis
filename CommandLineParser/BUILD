@@ -11,7 +11,6 @@ csharp_library(
     deps = [
         "@core_sdk_stdlib//:libraryset",
         "@CommandLineParser//:CommandLineParserAssembly",
-        "@MicrosoftML//:MicrosoftMLAssemblies",
-        "@MicrosoftMLDataView//:MicrosoftMLDataViewAssembly",
+        "//MachineLearning/train:ModelTrainer.dll",
     ],
 )

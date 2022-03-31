@@ -16,7 +16,8 @@
 	"extensions": [
 		"ms-dotnettools.csharp",
 		"BazelBuild.vscode-bazel",
-		"DavidAnson.vscode-markdownlint"
+		"DavidAnson.vscode-markdownlint",
+		"GrapeCity.gc-excelviewer"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

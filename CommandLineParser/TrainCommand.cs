@@ -1,6 +1,6 @@
 using System;
 using CommandLine;
-using Microsoft.ML;
+using SentimentAnalysis.MachineLearning;
 
 namespace SentimentAnalysis.CommandLineParser
 {
@@ -9,7 +9,8 @@ namespace SentimentAnalysis.CommandLineParser
     {
         public void Execute()
         {
-            MLContext context = new MLContext();
+            ModelTrainer trainer = new ModelTrainer();
+            trainer.Train();
             Console.WriteLine("Executing TrainCommand...");
         }
     }
