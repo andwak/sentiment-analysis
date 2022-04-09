@@ -35,6 +35,10 @@ The host platform and toolchain needs to be defined correctly for .Net toolchain
 
 `bazel build //...`
 
+To create a debug build of the application execute the following command.
+
+`bazel build -c dbg //...`
+
 # Running the Application
 
 ## Running the C# Application
