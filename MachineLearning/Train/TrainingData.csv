@@ -1,5 +1,8 @@
 Sentiment,Text
 1,"This project is great, I am learning lots"
-0,"The project is ok"
--1,"This project is really bad"
+0,"The project really is not good"
+0,"This project is really bad"
 1,"I really enjoyed this project. The results were fantastic"
+1,"We managed to solve the debugging problems"
+1,"we built our first .net project with Bazel"
+0,"The bazel documentation for dotnet rules was limited"
