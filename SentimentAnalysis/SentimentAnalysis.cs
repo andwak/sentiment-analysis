@@ -9,7 +9,7 @@ namespace SentimentAnalysis
     static void Main(string[] args)
     {
       Parser.Default.ParseArguments<TrainCommand, PredictCommand>(args)
-          .WithParsed<ICommand>(t => t.Execute());
+        .WithParsed<ICommand>(t => t.Execute());
 
     }
   }

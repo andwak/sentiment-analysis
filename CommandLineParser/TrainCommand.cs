@@ -11,7 +11,6 @@ namespace SentimentAnalysis.CommandLineParser
         {
             ModelTrainer trainer = new ModelTrainer();
             trainer.Train();
-            Console.WriteLine("Executing TrainCommand...");
         }
     }
 }
