@@ -36,8 +36,9 @@ The host platform and toolchain needs to be defined correctly for .Net toolchain
 `bazel build //...`
 
 To create a debug build of the application execute the following command.
+The flag '--sandbox_debug' ensures the sandbox is not modified and debugging symbols can be found by the debugger.
 
-`bazel build -c dbg //...`
+`bazel build -c dbg bazel run -c dbg --sandbox_debug //...`
 
 # Running the Application
 
